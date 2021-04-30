@@ -1,15 +1,18 @@
 const { User, Book } = require('../models');
+// import the signToken() function
+const { signToken } = require('../utils/auth');
 
 const resolvers = {
     Query: {
         me: async (parent, args, context) => {
+            // check for context.user. 
             if(context.user) {
               const userData = await User.findOne({ _id: context.user._id })
                 .select('-__v -password')
             
             return userData;
             }
-      
+            // If no context.user property exists,  the user isn't authenticated - throw an AuthenticationError.
             throw new AuthenticationError('Not logged in');
           }
     },
@@ -39,8 +42,6 @@ const resolvers = {
           return { token, user };
         }
     }
-
-
   };
   
   module.exports = resolvers;

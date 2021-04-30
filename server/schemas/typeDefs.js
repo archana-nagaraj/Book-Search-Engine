@@ -45,7 +45,6 @@ type Mutation {
     saveBook(input: bookInput): User
     removeBook(bookId: String!): User
 }
-  
 `;
 
 // export the typeDefs

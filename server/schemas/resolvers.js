@@ -40,6 +40,7 @@ const resolvers = {
     
           const token = signToken(user);
           return { token, user };
+<<<<<<< HEAD
         },
 
         saveBook: async (parent, { input }, context) => {
@@ -67,6 +68,10 @@ const resolvers = {
           } 
         }
     
+=======
+        }
+    }
+>>>>>>> feature/auth
   };
   
   module.exports = resolvers;

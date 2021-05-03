@@ -3,7 +3,9 @@
 
 ## Description 
 This project is to refactor a fully functioning Google Books API search engine built with a RESTful API to be a GraphQL API built with Apollo Server. The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
-The refactored app is deployed and is live at  [Heroku](https://archanas-booksearchengine.herokuapp.com/)
+
+The refactored app is deployed and is live at Heroku 
+https://archanas-booksearchengine.herokuapp.com/ 
 
 
 ## Table of Contents

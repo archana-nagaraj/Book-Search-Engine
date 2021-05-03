@@ -1,7 +1,7 @@
 {
   "name": "googlebooks-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server..",
   "main": "server/server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@work.github.com:arosenkranz/googlebooks-app.git"
+    "url": "git@github.com:archana-nagaraj/Book-Search-Engine.git"
   },
   "keywords": [],
   "author": "archana-nagaraj",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "if-env": "^1.0.4"
   },
